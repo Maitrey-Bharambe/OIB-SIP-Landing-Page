@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mighty Mug Café - Coming Soon</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      body {
+        background: url("https://images.unsplash.com/photo-1509042239860-f550ce710b93?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80")
+          no-repeat center center/cover;
+        height: 100vh;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        backdrop-filter: blur(3px);
+      }
+
+      .overlay {
+        background-color: rgba(0, 0, 0, 0.6);
+        position: absolute;
+        inset: 0;
+        z-index: 1;
+      }
+
+      .container {
+        z-index: 2;
+        position: relative;
+        padding: 2rem;
+      }
+
+      h1 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+        color: #d2a679;
+      }
+
+      h2 {
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+      }
+
+      p {
+        font-size: 1.2rem;
+        color: #eee;
+      }
+
+      .highlight {
+        color: #f7c08a;
+        font-weight: bold;
+      }
+
+      .btn {
+        margin-top: 2rem;
+        padding: 0.8rem 2rem;
+        font-size: 1rem;
+        background-color: #6f4e37;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background 0.3s ease;
+      }
+
+      .btn:hover {
+        background-color: #8b5e3c;
+      }
+
+      @media (max-width: 768px) {
+        h1 {
+          font-size: 2.2rem;
+        }
+        h2 {
+          font-size: 1.5rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="overlay"></div>
+    <div class="container">
+      <h1>☕ Mighty Mug Café</h1>
+      <h2>We're Brewing Something Special!</h2>
+      <p>
+        Our café is <span class="highlight">opening soon</span> with the finest
+        coffee blends and cozy vibes.
+      </p>
+      <p>Stay tuned for the grand opening!</p>
+      <button class="btn">Notify Me</button>
+    </div>
+  </body>
+</html>
